@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>RaspiCamScan</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/chota.min.css">
+
+	</head>
+
+  	<body>
+		<div class="row">
+			<div class="col text-center"><h1>RaspiCamScan</h1></div>
+		</div>
+		<div class="row">
+			<div class="col is-center"><img class="card" src="stream.mjpg" width="1024" height="768"></div>
+		</div>
+		<div class="row">
+			<div class="col is-center">
+				<form>
+						<label for="filepre">File prefix</label>
+						<input id="filepre" type="text" name="filepre" value="scan"><br>
+						
+						<label for="filepre">Number of frames</label>
+						<input id="frames" type="text" name="frames" value="12"><br>
+						
+						<button id="goscan">Scan</button><br><br>
+						<small id="frame_error" class="text-error is-hidden">At last frame, change number of frames to scan again.</small>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/main.js"></script>
+</html>
+
